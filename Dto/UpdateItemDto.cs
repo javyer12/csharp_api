@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ApiRest.Dtos
 {
-        public record CreateItemDto
+        public record UpdateItemDto
         {
                 [Required]
                 public string Name { get; set; }
