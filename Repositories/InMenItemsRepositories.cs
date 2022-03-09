@@ -37,5 +37,11 @@ namespace ApiRest.Repositories
                         items[index] = item;
                 }
 
+                public void DeleteItem(Guid id)
+                {
+                        //with this line of code i find the item.
+                        var index = items.FindIndex(existingItem => existingItem.Id == id);
+                        items.RemoveAt(index);
+                }
         }
 }
